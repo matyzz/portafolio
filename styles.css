@@ -1,50 +1,24 @@
-* {
-  margin: 0;
-  padding: 0;
+header img {
+    height: 80px;
+    margin-left: 40px;
 }
-:root {
-  --main-white: #f0f0f0;
-  --main-red: #be3144;
-  --main-blue: #45567d;
-  --main-gray: #303841;
-}
-/* box-sizing and font sizing */
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
-html {
-  box-sizing: border-box;
-  font-size: 62.5%;
-  scroll-behavior: smooth;
-}
-/* 1200px / 16px = 75em */
-@media (max-width: 75em) {
-  html {
-    font-size: 60%;
-  }
+body {
+    height: 125vh;
+    background-color: #F3F4F6;
+    background-size: cover;
+    font-family: sans-serif;
+    margin-top: 80px;
+    padding: 0px;
+	padding-top: 20px;
+	display:flex; 
+	flex-direction:column;
 }
 
-/* 980px / 16px = 61.25em */
-@media (max-width: 61.25em) {
-  html {
-    font-size: 58%;
-  }
+main {
+    color: white;
 }
 
-/* 460px / 16px = 28.75em */
-@media (max-width: 28.75em) {
-  html {
-    font-size: 55%;
-  }
-}
-nav img {
-    height: 100px;
-	position: absolute;
-    left: 50px;	
-}
-nav {
+header {
     background-color: white;
     position: fixed;
     top: 0;
@@ -57,45 +31,28 @@ nav {
 	margin: auto;
 	width: 100%;
 	text-align: center;
-	justify-content: center;
-	font-style: italic;
-	font-size: 3rem;
-	font-weight: 200;
 }
 
-nav * {
+header * {
     display: inline;
 }
 
-nav li {
+header li {
     margin: 20px;
 }
 
-nav li a {
+header li a {
     color: black;
     text-decoration: none;
 	transition: color .4s ease;
 }
-nav a:hover {
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header a:hover {
     color: red;
-}
-
-.welcome-section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100vh;
-  background-color: #000;
-  background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
-  font-style: italic;
-}
-.welcome-section > p {
-  font-size: 3rem;
-  font-weight: 200;
-  font-style: italic;
-  color: var(--main-red);
 }
 footer{
 	position: relative;
@@ -202,49 +159,25 @@ display: block;
     text-decoration: none;
 	transition: color .4s ease;
 }
-.projects-section {
-  text-align: center;
-  padding: 20px;
-  background: var(--main-blue);
-}
-
-.projects-title {
-  max-width: 500px;
-  margin: 0 auto 6rem auto;
-  border-bottom: 0.2rem solid var(--main-white);
-}
-
-@media (max-width: 28.75em) {
-  .projects-title {
-    font-size: 1rem;
-  }
-}
 #gallery {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  padding: 20px 4px;
-  padding-bottom: 20px;
+  padding: 40px 4px;
+  padding-bottom: 40px;
 }
 
 #gallery img {
-  width: 50%;
-  height: 300px;
+  width: 30%;
+  height: 350px;
   object-fit: cover;
-  margin-top: 5px;
+  margin-top: 10px;
   padding: 0 8px;
   border-radius: 10px;
 }
-#gallery a {
-  width: 50%;
-  height: 300px;
-  object-fit: cover;
-  margin-top: 5px;
-  padding: 0 8px;
-  border-radius: 10px;
-}
+
 @media (max-width: 800px) {
   #gallery img {
     width: 50%;
@@ -255,6 +188,14 @@ display: block;
     width: 100%;
   }
 }
+h1 {
+  font-family: 'Anton', sans-serif;
+}
+
+h2, h3, h4, h5, h6 {
+  font-family: 'Raleway', sans-serif;
+}
+
 .galeria{
 	position: static;
 	width: 50%;
@@ -268,4 +209,55 @@ display: block;
     padding-top: 5px;
     color: black;
 	border: 3px solid black;
+}
+
+.text {
+  font-size: 1.8rem;
+  letter-spacing: 0.6px;
+  text-align: justify;
+  padding-top: 15px;
+}
+.quote {
+  color: black;
+  font-size: 2.4rem;
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+}
+form {
+	width: 50%;
+	margin:auto;
+	color: black;
+	text-align: center;
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+.register {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+input {
+	display: block;
+	margin: 40px auto;
+	width: 70%;
+	padding: 15px;
+	font-size: 23px;
+	background: #d0d0d5;
+	border: 3px solid #3b3b4f;
+}
+.youtube {
+	width: 50%;
+	margin:auto;
+	color: black;
+	text-align: center;
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+h1 {
+	width: 100%;
+	margin:auto;
+	color: black;
+	text-align: center;
+	border: 3px solid black;
+	margin-bottom: 40px;
 }
