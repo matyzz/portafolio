@@ -1,3 +1,6 @@
+article {
+	width: clamp(200px, 50%, 600px);
+}
 header img {
     height: 80px;
     margin-left: 40px;
